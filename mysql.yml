@@ -1,0 +1,12 @@
+version: "3.22"
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysqlcom
+    command: ["sleep","infinity"]
+    env_file:
+    - .env
+    ports:
+    - "5005:3306"
+    volumes:
+    - "./akh:/var/lib/mysql"
