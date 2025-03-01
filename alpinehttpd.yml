@@ -1,0 +1,8 @@
+version: "3.22"
+services:
+  httpd:
+    build:
+      dockerfile: alpinehttpd
+    container_name: alpinehttpdcom
+    ports:
+    - "5004:80"
