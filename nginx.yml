@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+    - "5555:80"
+    volumes:
+    - abc:/data
+    networks:
+    - net1
+
+volumes:
+ abc:
+networks:
+ net1:
+    driver: bridge

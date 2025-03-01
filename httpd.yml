@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  httpd:
+    image: httpd:latest
+    container_name: httpd
+    ports:
+    -  "7777:80"
+    volumes:
+    - aks:/data
+    networks:
+    - net2
+
+volumes:
+  aks:
+networks:
+  net2:

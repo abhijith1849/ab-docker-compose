@@ -1,0 +1,6 @@
+version: "3.22"
+services:
+  almalinux:
+    image: almalinux:latest
+    container_name: almalinux
+    command: ["sleep","infinity"]
