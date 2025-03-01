@@ -1,0 +1,8 @@
+version: "3.22"
+services:
+  apache:
+    build:
+      dockerfile: uhttpd
+    container_name: ubuntuapach
+    ports:
+    - "5001:80" 

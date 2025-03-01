@@ -1,0 +1,8 @@
+version: "3.22"
+services:
+  nginx:
+    build:
+      dockerfile: ubuntun
+    container_name: ubuntucom
+    ports:
+    - "5000:80"

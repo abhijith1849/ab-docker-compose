@@ -1,0 +1,8 @@
+version: "3.22"
+services:
+  nginx:
+    build:
+     dockerfile: almang
+    container_name: almanginxc
+    ports:
+    - "5002:80"

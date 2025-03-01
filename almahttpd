@@ -1,0 +1,5 @@
+FROM almalinux:latest
+RUN dnf install httpd -y
+CMD ["httpd","-D","FOREGROUND"]
+COPY index.html /var/www/html
+EXPOSE 80
