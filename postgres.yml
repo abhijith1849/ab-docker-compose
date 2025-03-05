@@ -1,0 +1,8 @@
+version: "3.8"
+services: 
+  postgres:
+    image: postgres:latest
+    container_name: postgrescom
+    env_file:
+    - .env
+    command: ["sleep","infinity"]

@@ -1,17 +1,6 @@
-version: "3.22"
+version: "3"
 services:
-  mongo:
-    image: mongo:latest
-    container_name: mongo
+  mongodb:
+    image: mongo
     ports:
-    - "5678:27017"
-    volumes:
-    - yml:/data
-    networks:
-    - net3
-    command: sleep infinity
-
-volumes:
-  yml:
-networks:
-  net3:
+      - "27017:27017"

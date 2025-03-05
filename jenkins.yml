@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    ports:
+    - "1001:8080"
+    - "1002:50000"
