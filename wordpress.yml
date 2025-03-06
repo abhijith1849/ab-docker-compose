@@ -1,0 +1,6 @@
+version: "3.22"
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+    - "2003:80"

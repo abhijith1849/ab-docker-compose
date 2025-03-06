@@ -1,0 +1,11 @@
+version: "3.22"
+services:
+  portrainer:
+    image: portainer/portainer-ce
+    container_name: portainer1
+    ports:
+    - "2001:9000"
+    - "2002:8000"
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ./portrainer_data:/data

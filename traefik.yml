@@ -1,0 +1,15 @@
+version: "3.22"
+services:
+  traefik:
+    image: traefik:v3.3
+    container_name: traefikcom
+    command: --api.insecure=true --providers.docker
+    ports:
+    - 1234:80
+    - 4321:8080
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+
+  whoami:
+   image: traefik/whoami
+   container_name: abc

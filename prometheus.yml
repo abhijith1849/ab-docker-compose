@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  prometheus:
+    image: prometheus:latest
+    container_name: prometheuscom
+    ports:
+    - "1008:8080"
+    - "1009:9090"
